@@ -1,0 +1,10 @@
+api lista de contatos
+        funcionalidades
+-criar contato
+-listar contato
+-excluir contato
+
+        Rotas
+POST / contato -> { 'name': "cnome" };
+GET / contatos
+DELETE / contato?name=cnome
