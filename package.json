@@ -1,30 +1,21 @@
 {
   "name": "projeto-lista-de-contatos",
   "version": "1.0.0",
-  "main": "src/server.ts",
+  "type": "module",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "node --import=tsx --watch ./src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Eduardo-JBartikoski/Projeto-Lista-de-Contatos.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Eduardo-JBartikoski/Projeto-Lista-de-Contatos/issues"
-  },
-  "homepage": "https://github.com/Eduardo-JBartikoski/Projeto-Lista-de-Contatos#readme",
-  "description": "",
   "dependencies": {
     "express": "^5.2.1",
-    "helmet": "^8.1.0",
-    "typescript": "^5.9.3"
+    "helmet": "^8.1.0"
   },
   "devDependencies": {
+    "typescript": "^5.9.3",
     "@types/express": "^5.0.6",
     "@types/node": "^25.3.0",
-    "tsx": "^4.21.0",
-    "typecript": "^0.0.1-security"
+    "tsx": "^4.21.0"
   }
 }
