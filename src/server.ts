@@ -1,6 +1,7 @@
 import express, { Router } from 'express';
 import helmet from 'helmet';
 import router from './routes/index.js';
+//import contatoRouter from './routes/index.js'
 
 
 const server = express();
@@ -10,6 +11,8 @@ server.use(express.json());
 server.use(express.urlencoded( { extended: true } ));
 
 server.use('/', router);
+
+server.use('/contato', router);
 
 server.listen(3000, () => {
     server.response
