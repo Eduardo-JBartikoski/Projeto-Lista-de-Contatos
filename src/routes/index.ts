@@ -1,8 +1,5 @@
 import express from 'express';
-import { readFile, writeFile } from 'fs/promises';
 import { creatContact, deleteContact, getContatos } from '../services/contact.js';
-
-const dataSource = './data/list.txt';
 const router = express.Router();
 
 router.get('/', (req,res) => {
